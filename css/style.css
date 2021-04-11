@@ -19,15 +19,14 @@ main {
     justify-content: center;
     align-items: center;
     margin: 0;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .container {
     display: flex;
-    border-radius: 10px;
+    border-radius: 8px;
     overflow: hidden;
-    width: 825px;
-    margin: 60px 70px;
+    width: 975px;
+    margin: 58px 70px;
 }
 
 .container .card {
@@ -35,15 +34,15 @@ main {
     font-size: 15px;
     color: hsla(0, 0%, 100%, 0.75);
     font-family: 'Lexend Deca', sans-serif;
-    height: 450px;
+    height: 500px;
     position: relative;
-    flex-basis: 275px;
+    flex-basis: 325px;
 }
 
 h2 {
     font-family: 'Big Shoulders Display', cursive;
     font-weight: 800;
-    font-size: 36px;
+    font-size: 40px;
 }
 
 p {
@@ -82,11 +81,16 @@ button {
     height: 45px;
     font-family: inherit;
     position: absolute;
-    bottom: 40px;
+    bottom: 45px;
     cursor: pointer;
     text-transform: capitalize;
-    font-size: 18px;
     background-color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+main .container .card button:hover {
+    background-color: transparent;
+    color: #fff;
 }
 
 button:focus {

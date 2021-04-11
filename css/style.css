@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 95%);
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 825px;
+    margin: 60px 70px;
+}
+
+.container .card {
+    padding: 40px;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    height: 450px;
+    position: relative;
+    flex-basis: 275px;
+}
+
+h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 800;
+    font-size: 36px;
+}
+
+p {
+    line-height: 1.7;
+    margin: 15px 0 70px 0
+}
+
+.container .card:first-child {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.container .card:first-child button{
+    color: hsl(31, 77%, 52%);
+}
+
+.container .card:nth-child(2) {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.container .card:nth-child(2) button {
+    color: hsl(184, 100%, 22%);
+}
+
+.container .card:last-child {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.container .card:last-child button{
+    color: hsl(179, 100%, 13%);
+}
+
+button {
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    height: 45px;
+    font-family: inherit;
+    position: absolute;
+    bottom: 40px;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: 18px;
+    background-color: hsl(0, 0%, 95%);
+}
+
+button:focus {
+    outline: none;
+}
+
+@media (max-width: 990px) {
+    .container {
+        flex-direction: column;
+        width: 275px;
+        margin: 80px 20px;
+    }
+
+    main {
+        box-shadow: none;
+    }
+}
